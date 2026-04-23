@@ -1,42 +1,39 @@
 <section
-  class="px-4 py-12 sm:px-6 sm:py-20"
+  class="px-4 py-14 sm:px-6 sm:py-20"
   aria-labelledby="cta-heading"
 >
   <div
-    class="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-gremio-900/50 px-6 py-10 text-center sm:px-10 sm:py-14"
+    class="mx-auto max-w-2xl rounded-2xl border border-white/[0.06] bg-surface-800/50 px-6 py-10 shadow-xl shadow-black/20 backdrop-blur-sm sm:px-10 sm:py-12"
   >
     <h2
       id="cta-heading"
-      class="font-display text-2xl font-bold leading-tight text-white text-balance sm:text-3xl"
+      class="font-display text-2xl font-semibold leading-snug tracking-tight text-zinc-50 sm:text-3xl"
     >
       {{ copy.ctaFinalTitle }}
     </h2>
-    <p class="mx-auto mt-4 text-base leading-relaxed text-stone-400 sm:text-lg">
+    <p
+      class="mt-3 text-left text-[15px] leading-relaxed text-zinc-400 sm:text-center sm:text-base"
+    >
       {{ copy.ctaFinalSub }}
     </p>
-    <div
-      class="mt-8 hidden sm:flex sm:justify-center"
-    >
+    <div class="mt-8 flex justify-center">
       <app-whatsapp-cta
         [label]="copy.ctaWhatsapp"
         size="lg"
         class="w-full max-w-md"
       />
     </div>
-    <p class="mt-6 text-xs text-stone-500 sm:text-sm">
-      <span class="sm:hidden"
-        >No celular, use o botão verde fixo no fim da tela — é o mesmo contato. No desktop, o CTA
-        fica aí em cima.</span
-      >
-      <span class="hidden sm:inline"
-        >Mesma conversa, mesmo tom. Se leu até aqui, o WhatsApp de cima continua a melhor
-        ponte.</span
-      >
+    <p
+      class="mt-4 text-left text-xs leading-relaxed text-zinc-600 sm:text-center sm:text-sm"
+    >
+      A mesma conversa do início ao fim. Sem automação, sem gravação robótica.
     </p>
     <div
-      class="mt-8 flex flex-col items-center gap-2 border-t border-white/10 pt-8"
+      class="mt-8 flex flex-col items-center gap-2 border-t border-white/[0.06] pt-8"
     >
-      <span class="text-xs font-medium uppercase tracking-wider text-stone-500">Prova social</span>
+      <span class="text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500"
+        >Instagram</span
+      >
       <app-instagram-cta />
     </div>
   </div>

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { COPY, SITE } from '../../../core/site.constants';
+import { COPY } from '../../../core/site.constants';
 import { WhatsappCta } from '../../ui/whatsapp-cta/whatsapp-cta';
 import { InstagramCta } from '../../ui/instagram-cta/instagram-cta';
 
@@ -10,6 +10,5 @@ import { InstagramCta } from '../../ui/instagram-cta/instagram-cta';
   templateUrl: './cta-section.html',
 })
 export class CtaSection {
-  readonly site = SITE;
   readonly copy = COPY;
 }

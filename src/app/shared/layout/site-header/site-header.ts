@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { COPY, NAV_LINKS, SITE, whatsappHref } from '../../../core/site.constants';
 
 @Component({
@@ -11,4 +11,13 @@ export class SiteHeader {
   readonly nav = NAV_LINKS;
   readonly copy = COPY;
   readonly wa = whatsappHref();
+  protected readonly menuOpen = signal(false);
+
+  protected closeMenu(): void {
+    this.menuOpen.set(false);
+  }
+
+  protected toggleMenu(): void {
+    this.menuOpen.update((v) => !v);
+  }
 }

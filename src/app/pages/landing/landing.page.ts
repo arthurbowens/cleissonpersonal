@@ -10,7 +10,6 @@ import { AudienceSection } from '../../shared/sections/audience-section/audience
 import { TestimonialsSection } from '../../shared/sections/testimonials-section/testimonials-section';
 import { CtaSection } from '../../shared/sections/cta-section/cta-section';
 import { CtaMidBand } from '../../shared/ui/cta-mid-band/cta-mid-band';
-import { WaMobileBar } from '../../shared/ui/wa-mobile-bar/wa-mobile-bar';
 
 @Component({
   selector: 'app-landing-page',
@@ -26,7 +25,6 @@ import { WaMobileBar } from '../../shared/ui/wa-mobile-bar/wa-mobile-bar';
     AudienceSection,
     TestimonialsSection,
     CtaSection,
-    WaMobileBar,
   ],
   templateUrl: './landing.page.html',
   styleUrl: './landing.page.css',
