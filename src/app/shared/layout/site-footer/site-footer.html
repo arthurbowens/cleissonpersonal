@@ -1,0 +1,24 @@
+<footer
+  id="contato"
+  class="border-t border-white/10 bg-gremio-950 px-4 py-12 sm:px-6"
+  role="contentinfo"
+>
+  <div class="mx-auto flex max-w-6xl flex-col gap-10 md:flex-row md:items-start md:justify-between">
+    <div>
+      <p class="font-display text-xl font-semibold text-white">{{ site.brand }}</p>
+      <p class="mt-2 max-w-md text-sm leading-relaxed text-stone-400">
+        Mobilidade, segurança e qualidade de vida — para você ou para quem você ama.
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="text-sm font-medium text-stone-300">Fale agora</span>
+      <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <app-whatsapp-cta [label]="copy.ctaPrimary" size="md" />
+        <app-instagram-cta />
+      </div>
+    </div>
+  </div>
+  <p class="mx-auto mt-10 max-w-6xl border-t border-white/10 pt-8 text-center text-xs text-stone-500">
+    © {{ year }} {{ site.brand }}. Todos os direitos reservados.
+  </p>
+</footer>

@@ -1,0 +1,25 @@
+<section
+  class="px-4 py-16 sm:px-6 sm:py-20"
+  aria-labelledby="cta-heading"
+>
+  <div
+    class="mx-auto max-w-6xl rounded-3xl border border-celeste-500/25 bg-gradient-to-br from-celeste-600/15 via-gremio-900 to-gremio-950 px-6 py-12 text-center sm:px-12 sm:py-16"
+  >
+    <h2 id="cta-heading" class="font-display text-3xl font-bold leading-tight text-white text-balance sm:text-4xl">
+      {{ copy.ctaFinalTitle }}
+    </h2>
+    <p class="mx-auto mt-4 max-w-2xl text-base text-stone-300 sm:text-lg">
+      {{ copy.ctaFinalSub }}
+    </p>
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
+      <app-whatsapp-cta [label]="copy.ctaPrimary" size="lg" />
+      <app-whatsapp-cta [label]="copy.ctaSecondary" size="lg" />
+    </div>
+    <div class="mt-8 flex justify-center">
+      <app-instagram-cta />
+    </div>
+    <p class="mt-8 text-xs text-stone-500">
+      {{ site.brand }} — personal trainer. Resposta pelo WhatsApp em horário comercial.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<header
+  class="sticky top-0 z-50 border-b border-white/10 bg-gremio-950/95 backdrop-blur-md"
+  role="banner"
+>
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4">
+    <a
+      href="#topo"
+      class="font-display min-w-0 text-base font-semibold tracking-tight text-white sm:text-lg"
+    >
+      {{ site.brand }}
+    </a>
+    <nav class="hidden min-w-0 flex-1 items-center justify-center gap-6 lg:flex" aria-label="Principal">
+      @for (link of nav; track link.id) {
+        <a
+          class="whitespace-nowrap text-sm font-medium text-stone-300 transition hover:text-celeste-300"
+          [href]="'#' + link.id"
+        >
+          {{ link.label }}
+        </a>
+      }
+    </nav>
+    <app-whatsapp-cta class="shrink-0" [label]="copy.ctaHeader" size="sm" />
+  </div>
+</header>

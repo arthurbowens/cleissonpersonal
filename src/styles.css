@@ -1,3 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
 
-@import "tailwindcss";
+/* Paleta inspirada no azul e preto do Grêmio: fundo preto/azul-marinho e celeste de destaque */
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-gremio-950: #000000;
+  --color-gremio-900: #050a14;
+
+  --color-celeste-200: #bae6fd;
+  --color-celeste-300: #7dd3fc;
+  --color-celeste-400: #38bdf8;
+  --color-celeste-500: #0ea5e9;
+  --color-celeste-600: #0284c7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    @apply bg-gremio-950 font-sans text-stone-300 antialiased;
+  }
+}

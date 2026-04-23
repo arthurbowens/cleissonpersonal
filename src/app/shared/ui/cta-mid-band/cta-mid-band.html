@@ -1,0 +1,22 @@
+<section
+  class="border-y border-white/10 bg-gradient-to-r from-gremio-900 via-gremio-950 to-gremio-900 px-4 py-10 sm:px-6"
+  aria-label="Chamada para ação"
+>
+  <div
+    class="mx-auto flex max-w-6xl flex-col items-stretch justify-between gap-6 lg:flex-row lg:items-center"
+  >
+    <p
+      class="max-w-xl text-center text-lg font-semibold leading-snug text-white text-balance sm:text-xl lg:text-left"
+    >
+      {{ title() }}
+    </p>
+    <div
+      class="flex w-full shrink-0 flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:w-auto lg:justify-end"
+    >
+      <app-whatsapp-cta [label]="copy.ctaPrimary" size="lg" />
+      @if (dualWhatsapp()) {
+        <app-whatsapp-cta [label]="copy.ctaSecondary" size="lg" />
+      }
+    </div>
+  </div>
+</section>
