@@ -1,25 +1,43 @@
 <section
-  class="px-4 py-16 sm:px-6 sm:py-20"
+  class="px-4 py-12 sm:px-6 sm:py-20"
   aria-labelledby="cta-heading"
 >
   <div
-    class="mx-auto max-w-6xl rounded-3xl border border-celeste-500/25 bg-gradient-to-br from-celeste-600/15 via-gremio-900 to-gremio-950 px-6 py-12 text-center sm:px-12 sm:py-16"
+    class="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-gremio-900/50 px-6 py-10 text-center sm:px-10 sm:py-14"
   >
-    <h2 id="cta-heading" class="font-display text-3xl font-bold leading-tight text-white text-balance sm:text-4xl">
+    <h2
+      id="cta-heading"
+      class="font-display text-2xl font-bold leading-tight text-white text-balance sm:text-3xl"
+    >
       {{ copy.ctaFinalTitle }}
     </h2>
-    <p class="mx-auto mt-4 max-w-2xl text-base text-stone-300 sm:text-lg">
+    <p class="mx-auto mt-4 text-base leading-relaxed text-stone-400 sm:text-lg">
       {{ copy.ctaFinalSub }}
     </p>
-    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
-      <app-whatsapp-cta [label]="copy.ctaPrimary" size="lg" />
-      <app-whatsapp-cta [label]="copy.ctaSecondary" size="lg" />
+    <div
+      class="mt-8 hidden sm:flex sm:justify-center"
+    >
+      <app-whatsapp-cta
+        [label]="copy.ctaWhatsapp"
+        size="lg"
+        class="w-full max-w-md"
+      />
     </div>
-    <div class="mt-8 flex justify-center">
+    <p class="mt-6 text-xs text-stone-500 sm:text-sm">
+      <span class="sm:hidden"
+        >No celular, use o botão verde fixo no fim da tela — é o mesmo contato. No desktop, o CTA
+        fica aí em cima.</span
+      >
+      <span class="hidden sm:inline"
+        >Mesma conversa, mesmo tom. Se leu até aqui, o WhatsApp de cima continua a melhor
+        ponte.</span
+      >
+    </p>
+    <div
+      class="mt-8 flex flex-col items-center gap-2 border-t border-white/10 pt-8"
+    >
+      <span class="text-xs font-medium uppercase tracking-wider text-stone-500">Prova social</span>
       <app-instagram-cta />
     </div>
-    <p class="mt-8 text-xs text-stone-500">
-      {{ site.brand }} — personal trainer. Resposta pelo WhatsApp em horário comercial.
-    </p>
   </div>
 </section>

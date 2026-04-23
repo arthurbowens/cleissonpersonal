@@ -1,39 +1,43 @@
 /**
- * Conteúdo e links do site. Ajuste WhatsApp, Instagram e e-mail antes de publicar.
+ * Conteúdo e links do site. Ajuste WhatsApp e Instagram antes de publicar.
  */
 export const SITE = {
   brand: 'Cleisson Personal',
   title:
     'Recupere mobilidade e autonomia — personal trainer em domicílio e presencial | Cleisson Personal',
   description:
-    'Acompanhamento para idosos, limitações de mobilidade, hipertensão e diabetes. Atendimento em casa ou presencial. Fale no WhatsApp.',
+    'Acompanhamento para idosos, limitações de mobilidade, hipertensão e diabetes. Atendimento em casa ou presencial.',
   whatsappPhoneDigits: '5511999999999',
   whatsappPrefillMessage:
-    'Olá, Cleisson! Quero me movimentar com mais segurança e gostaria de conversar sobre acompanhamento.',
+    'Olá, Cleisson! Vi o site. Quero uma orientação: é para mim / é para alguém da minha família. Podemos falar de horários e domicílio ou presencial?',
   /** Troque pelo @ real (ex.: https://www.instagram.com/cleissonpersonal/) */
   instagramProfileUrl: 'https://www.instagram.com/',
 } as const;
 
+/**
+ * Uma frase de conversão para TODOS os botões verdes (sem competir com variação).
+ * Microcopy: explica o "o quê" sem ser segundo CTA.
+ */
 export const COPY = {
   heroHeadline:
     'Recupere sua mobilidade, reduza dores e volte a ter autonomia com segurança — mesmo com limitações ou idade avançada.',
   heroSub:
     'Atendimento personalizado em casa ou presencial, com foco em saúde, reabilitação e qualidade de vida.',
-  ctaPrimary: 'Quero voltar a me movimentar sem dor',
-  ctaSecondary: 'Falar com o personal agora',
-  /** Texto curto no topo (cabe em telas pequenas) */
+  /** Botão verde (única promessa) */
+  ctaWhatsapp: 'Falar com o Cleisson no WhatsApp',
+  /** Uma linha de confiança debaixo do CTA (não é outro botão) */
+  ctaTrust: '1ª conversa: entendemos o caso, tiramos dúvidas, sem pressa. Resposta em horário comercial.',
   ctaHeader: 'WhatsApp',
   familyBanner: 'Cuide de quem você ama com acompanhamento profissional seguro.',
   familySub:
     'Muitas famílias procuram ajuda para pai, mãe ou avós: alguém que respeite limitações, medo de cair e o ritmo do dia a dia. Esse é um dos focos do trabalho.',
   aboutHeading: 'Mais autonomia, menos dor e mais segurança no dia a dia',
-  ctaMidTitle1: 'Sem compromisso: conte seu caso no WhatsApp e receba orientação.',
-  ctaAfterSobre:
-    'Quem cuida da família também precisa de apoio. Um passo no WhatsApp pode esclarecer tudo.',
-  ctaMidTitle2: 'Resposta direta, sem formulário longo — fale agora.',
-  ctaFinalTitle: 'Um passo hoje pode mudar o amanhã de quem você ama.',
+  ctaMidTitle1: 'Sem compromisso: se fizer sentido, você sabe o próximo passo.',
+  ctaAfterSobre: 'Cuidar de alguém cansa — com orientação, fica mais seguro decidir o que fazer.',
+  ctaMidTitle2: 'Quando quiser, a conversa é com calma, olhando a rotina e as limitações.',
+  ctaFinalTitle: 'Se chegou até aqui, o próximo passo é claro',
   ctaFinalSub:
-    'Chame no WhatsApp. Se preferir, acompanhe o dia a dia no Instagram.',
+    'No Instagram você vê o estilo de trabalho. No WhatsApp a gente vê o que encaixa no seu caso: rotina, limitações, casa ou outro local — sem compromisso na conversa.',
 } as const;
 
 export const PAIN_POINTS = [
