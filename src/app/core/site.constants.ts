@@ -7,11 +7,11 @@ export const SITE = {
     'Recupere mobilidade e autonomia — personal trainer em domicílio e presencial | Cleisson Personal',
   description:
     'Acompanhamento para idosos, limitações de mobilidade, hipertensão e diabetes. Atendimento em casa ou presencial.',
-  whatsappPhoneDigits: '5511999999999',
+  whatsappPhoneDigits: '5554996474796',
   whatsappPrefillMessage:
     'Olá, Cleisson! Vi o site. Quero uma orientação: é para mim / é para alguém da minha família. Podemos falar de horários e domicílio ou presencial?',
   /** Troque pelo @ real (ex.: https://www.instagram.com/cleissonpersonal/) */
-  instagramProfileUrl: 'https://www.instagram.com/',
+  instagramProfileUrl: 'https://www.instagram.com/cleisson_personal_trainer?igsh=am9keGN6ZjFkcjF0',
 } as const;
 
 /**
